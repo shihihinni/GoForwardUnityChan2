@@ -31,7 +31,7 @@ public class CubeController : MonoBehaviour
         }
         void OnCollisionEnter2D(Collision2D collision)
         {
-                if (collision.gameObject.name == "ground")
+                if (collision.gameObject.tag == "ground")
                 {
                         GetComponent<AudioSource>().Play();
                 }
@@ -39,6 +39,5 @@ public class CubeController : MonoBehaviour
                 {
                         GetComponent<AudioSource>().Play();
                 }
-               
         }
 }
