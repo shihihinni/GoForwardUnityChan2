@@ -35,5 +35,9 @@ public class CubeController : MonoBehaviour
                 {
                         GetComponent<AudioSource>().Play();
                 }
+                if (collision.gameObject.tag == "Cube")
+                {
+                        GetComponent<AudioSource>().Play();
+                }
         }
 }
